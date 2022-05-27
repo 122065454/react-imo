@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    .logo {
+        & img {
+            width: 108px;
+            height: 30px;
+        }
+    }
+    .nav {
+        font-family: 'Regular';
+        & a {
+            font-size: 16px;
+            padding: 0 12px;
+            color: #000000;
+        }
+    }
+    .right {
+        display: flex;
+        .skin {
+            width: 116px;
+            height: 36px;
+            border-radius: 24px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000000;
+            & option {
+                font-size: 16px;
+            }
+        }
+        .language {
+            width: 116px;
+            height: 36px;
+            background-color: #ECECEC;
+            border-radius: 24px;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: 600;
+            :global {
+                .ant-select-selector {
+                    background-color: #ECECEC !important;
+                }
+            }
+        }
+        .wallet {
+            cursor: pointer;
+            width: 116px;
+            height: 36px;
+            background: #ECECEC;
+            border-radius: 24px;
+            font-weight: 600;
+            color: #000000;
+            text-align: center;
+            line-height: 36px;
+            margin-right: 20px;
+        }
+    }
+    :global {
+        .ant-select-selector {
+            border: 0 !important;
+            height: 36px !important;
+        }
+        .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+            background-color: transparent;
+        }
+        .ant-select-selection-item {
+            padding-left: 5px !important;
+            line-height: 34px !important;
+        }
+        .ant-select-arrow {
+            width: 17px;
+            height: 16px;
+            background-image: url('./img/arrow_down.png');
+            background-size: contain;
+            color: #000;
+            top: 43%;
+        }
+        .ant-select-arrow .anticon > svg {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .header {
+        padding: 0 50px;
+    }
+}
+
+.BSC {
+    .active {
+        color: #E5A800 !important;
+    }
+}
+
+.HECO {
+    .active {
+        color: #009A7F !important;
+    }
+}

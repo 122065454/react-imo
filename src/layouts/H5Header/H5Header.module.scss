@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: rem(375);
+    padding: 0 rem(15);
+    justify-content: space-between;
+    height: rem(44);
+    .logo {
+        width: rem(76);
+        height: rem(23);
+    }
+    .side {
+        width: rem(24);
+        height: rem(24);
+        margin-right: rem(10);
+    }
+    .setWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .set {
+            margin-left: rem(10);
+            display: flex;
+            align-items: center;
+            width: rem(28);
+            height: rem(28) ;
+            background: #FFFFFF;
+            border: rem(4) solid #fff;
+            border-radius: 50%;
+            & img {
+                width: rem(20);
+                height: rem(20);
+            }
+        }
+        .wallet {
+            margin-left: rem(10);
+            & img {
+                width: rem(28);
+                height: rem(28);
+            }
+        }
+    }
+    :global {
+        .ant-select {
+            width: rem(75);
+            height: rem(28);
+            border-radius: rem(14);
+            overflow: hidden;
+        }
+        .ant-select-selector {
+            font-family: 'Medium';
+            border: 0 !important;
+            padding: 0 rem(3) 0 rem(8) !important;
+        }
+        .ant-select-arrow {
+            width: rem(13);
+            height: rem(12);
+            background-image: url('./img/arrow_down.png');
+            background-size: contain;
+            color: #000;
+            top: 55%;
+        }
+        .ant-select-arrow .anticon > svg {
+            display: none;
+        }
+    }
+}
+
+.HECO {
+    background: #13165B;
+}
+
+.BSC {
+    background: #191919;
+}
+

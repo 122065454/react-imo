@@ -1,0 +1,221 @@
+export const enList = {
+  // 头部
+  Header: {
+    Home: 'Home',
+    Swap: 'Swap',
+    Pool: 'Pool',
+    Liquidity: 'Liquidity',
+    Trading: 'Trading',
+    Boardroom: 'Boardroom',
+    Bridge: 'Bridge',
+    Chart: 'Chart',
+    Buyback: 'Burning black hole',
+    News: 'News',
+    IMO: 'IMO',
+    Farm: 'Farm',
+    Connect: 'Connect'
+  },
+  // 底部
+  Footer: {
+    Application: 'Application',
+    ACText1: 'Listing Token',
+    ACText2: 'Liquidity Mining Whitelist',
+    ACText3: 'IMO Application',
+    ACText4: 'MDEX Ecological Fund Application',
+    Guide: 'Guide',
+    GUText1: 'Swap',
+    GUText2: 'Pool',
+    GUText3: 'Info',
+    GUText4: 'Liquidity',
+    GUText5: 'Boardroom',
+    GUText6: 'Trading',
+    Doc: 'Doc',
+    DOText1: 'FAQ',
+    DOText2: 'API',
+    Guidance: 'User Guide',
+    About: 'About',
+    ABText1: 'Announcement',
+    ABText2: 'Adjustment of Pool',
+    ABText3: 'Ecological Fund',
+    Vulnerability: 'Bug Bounty Campaign',
+    ABText4: 'Contact us: business@mdex.com',
+    Reserved: '@2021 Mdex.com.All rights reserved',
+  },
+  // 主图
+  Banner: {
+    Title: (coin='XX') => { return `${coin} current statistics` },
+    account1: (coin='XX') => { return `Current participants of ${coin}：` }, //
+    account2: (coin='XX') => { return `Number of ${coin} participants in the current period` }, //
+    Introduce: '05/25 20:00 SGT Start',
+    Rollout: 'Featured projects coming soon:',
+    ShowProject: 'View all projects',
+    CardTitle: 'IMO Project ? ',
+    StartStatus: 'Stay Tuned!',
+    Start: 'start'
+  },
+  // 首页/详情-tab切换
+  Tab: {
+    Processing: 'Processing',
+    Start: 'About to start',
+    Participated: 'Participated',
+    Info: 'IMO Info',
+    Description: 'Description',
+    MyIn: 'My Portfolio',
+    IMOs: 'IMOs',
+    Over: 'Over',
+    Lockup: 'Locked',
+  },
+  // 首页/详情-项目
+  Active: {
+    Tips: 'Through a new form of staking, IMO will reward all new project tokens to staking MDX or xMDX users. During the staking period, part of the board of directors’ proceeds will be destroyed',
+    ComeS: 'Coming Soon',
+    Progress: 'in progress',
+    Lockup: 'Locked',
+    Inli: 'In liquidation',
+    Over: 'Over',
+    AirdropAmount: 'Rewards Amount',
+    AirdropPrice: 'Price',
+    Begin: 'Stake start time',
+    End: 'Stake end time',
+    PledgeEnd: 'Staking Remaining',
+    LockEndTime: 'lock-up end time',
+    Participate: 'Participated',
+    PledgeAmount: 'Total Staked',
+    EstimateLockTime: 'Estimated lock-up time',
+    LockEndTimeDec: (height=66666) => {return `Completed locked-up blcok height: ${height} Completed lock-up time is a estimated time based on the staking end time plus the lock-up duration. The actual lock-up end time needs to be based on the height of the lock-up end block`},
+    LockupTime: 'Remaining Lock-up time',
+    PopText1: 'IMO stake token:',
+    BeginDesc: '暂定BeginTips',
+    EndDesc: '暂定EndTips',
+    EstimateLockDesc: 'The estimated lock-up period is dynamically calculated based on the number of staked xMDX in the IMO pool. The more stake xMDX , the shorter the lock-up period.',
+    LockDesc: (height=66666) => {return `Block height at the end of locked period: ${height}, Remaining lock-up period is the estimated time based on the data of the locked-up block, and the actual lock-up time needs to be based on the block height`},
+    ClearTips: 'The contract is calculating the airdrop rewards for each user, and the rewards can be withdrawn after the clearing is completed',
+    EndTips: 'IMO is over, please claim rewards and principal in time.',
+    UnLockup: 'Unlock',
+    MyPledge: 'My staking',
+    MyShare: 'My share',
+    AwardAmount: 'My Rewards',
+    Unlimited: 'Unlimited',
+    Calculate: 'Calculate',
+    Stipulation: 'About',
+    InliDesc: 'Estimated time for completion of liquidation: 09.17 20:00 SGT, Rewards can be withdrawn when liquidation is completed. Your principal can be claimed after the lock-up period completed'
+  },
+  // 首页问答
+  explana: {
+    OneAsk: 'What do I need to prepare before participating in IMO?',
+    OneAnswer1: '1. Download wallet: computer: Metamask,mobile: imToken、Math Wallet、BitKeep、O3 Swap、Token Pocket. ',
+    OneAnswer2: '2. Wallet creation and HECO/BSC network configuration. ',
+    OneAnswer3: '3. Buy MDX',
+    OneAnswer4: '4. Stake MDX to obtain lock-up voucher ：xMDX',
+    TwoAsk: 'How to participate in IMO?',
+    TwoAnswer1: '1. Choose the ongoing IMO project and Stake MDX or xMDX to get new token rewards',
+    TwoAnswer2: '2. The contract will dynamically calculate the lock-up time based on the number of staked vouchers. After the staking period is completed, it will enter the lock-up period.',
+    TwoAnswer3: '3. Users can withdraw the principal after the lock-up period.',
+    ThreeAsk: 'When can I get my rewards?',
+    ThreeAnswer1: 'After the IMO liquidation is completed (depending on the online arrangement of the project), you can get your token rewards in the project details page',
+    FourAsk: 'IMO common problem',
+    FourAnswer1: 'How long does IMO need to lock up?',
+    FourAnswer2: 'How much boardroom rewards need to be deducted?',
+    Apply: 'Apply now',
+    FotText: 'Is your project ready to get launched on MDEX?',
+    Poratal: 'How to apply to participate in IMO?',
+    Iap: 'IMO application process'
+  },
+  // 项目详情-信息
+  Info: {
+    IMOif: 'IMO information',
+    Begin: 'Start time :',
+    End: 'End time :',
+    Award: 'IMO rewards amount :',
+    Price: 'Price :',
+    Destroy: 'MDX burned :',
+    Tokenif: 'Token information',
+    CoinName: 'Token name :',
+    AwardAccount: 'Reward tokens :',
+    TotalSupply: 'Total supply :',
+    ToAdr: 'Token addreess :',
+    AddCoin: (coin='XX') => { return `Add ${coin} to wallet` } 
+  },
+  // 项目详情-描述
+  Desc: {
+    ProName: 'Project name',
+    ProDes: 'Project Description',
+    Contact: 'Contact the project party',
+    WebSide: 'Official website:',
+    Twitter: 'Twitter:'
+  },
+  // 项目详情-参与记录
+  Investment: {
+    PledgeMoney: 'Total stake number',
+    MyShare: 'My share',
+    RewardAmount: 'Reward tokens',
+    PledgeHistory: 'Stake history',
+    DestroyIncome: 'My burned MDX'
+  },
+  // 按钮
+  Btn: {
+    Confirming: 'Confirming',
+    Acquired: 'acquired',
+    Claim: 'Claim',
+    Trade: 'Trade',
+    Approve: 'Approve',
+    Approving: 'Approving',
+    Confirm: 'Confirm',
+    Pii: 'Stake ',
+    Mam: 'Add liquidity',
+  },
+  // 弹框
+  Pop: {
+    Buco: 'Business cooperation',
+    Notice: 'Notice',
+    ToIn: 'Won gained:',
+    Retrieve: 'Retrieve',
+    Get: 'Get',
+    Gypa: 'Get your project assets',
+    Unas: 'Unsigned assets:',
+    Ana: 'Acquire new assets:',
+    Inus: 'Stake',
+    Available: 'Available',
+    Topic: 'Your LP balance is insufficient,please get the LP first',
+    Limit: 'Personal stake limit:',
+    Approve: 'Approve',
+    success: 'successfully',
+    error: 'Fail',
+    Inveset: 'Sent',
+    ViewOn: 'View on',
+    Already: 'Staked：',
+    And: 'and',
+    Extract: 'Claim',
+    Warning: 'Asset is under liquidating, you can only claim the unsuccessful assets temporarily, and the successful assets are expected to be claimed within 24 hours',
+    AirdropAwarn: 'Award：',
+    ExtractIncome: 'Claim rewards',
+    ExtractPrincipal: 'Claim',
+    ClaimTextTitle: 'DMT tokens will be sent to this address through the HECO network. Please follow the procedure as follows:',
+    ClaimText1: '1.Switch to the HECO network.',
+    ClaimText2: '2.Copy the token contract address followed by adding token to the wallet.',
+    ContractAddress: 'Token contract address：'
+  },
+  // 补充
+  Supplement: {
+    Return: 'Return' ,
+    Product: 'Product',
+    Loading: 'Loading',
+    Nodata: 'No data',
+    ProductList: 'Product list'
+  },
+  // 校验
+  Check: {
+    MinLimit: 'Exceeding the bottom limit. Please input a valid volume number.',
+    MaxLimit: 'Exceeding the upper limit. Please input a valid number.',
+    Topic: 'Not enough balance. Please have',
+  },
+  // 侧边栏
+  Slide: {
+    Apply: 'Listing Token',
+    Fluidity: 'Liquidity Mining Whitelist',
+    Fund: 'MDEX Ecological Fund Application',
+    Notice: 'Notice',
+    Repurchase: 'Repurchase & Burn',
+    Bridge: 'Bridge'
+  }
+}

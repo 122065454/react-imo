@@ -1,0 +1,369 @@
+@media screen and (min-width: 540px) {  
+    .card {
+        width: 380px;
+        // height: 280px;
+        background: #FFFFFF;
+        border-radius: 24px;
+        padding: 25px 20px;
+        cursor: pointer;
+        .cardTop {
+            .content {
+                display: flex;
+                justify-content: space-between;
+            }
+            .titleBar {
+                display: flex;
+                align-items: center;
+                .proPic {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                    background: #EFEFEF;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .title {
+                    font-family: 'Bold';
+                    width: 150px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: #000000;
+                    margin-bottom: 4px;
+                    align-items: center;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    & img {
+                        margin-left: 5px;
+                        width: 21px;
+                        height: 20px;
+                    }
+                }
+                .coin {
+                    position: relative;
+                    padding: 5px 20px;
+                    border-radius: 19px;
+                    line-height: 28px;
+                    & span {
+                        position: absolute;
+                        top: 50%;
+                        left: 12px;
+                        transform: translateY(-50%);
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 50%;
+                    }
+                    & i {
+                        font-family: 'SemiBold';
+                    }
+                }
+            }
+            .coinPic {
+                text-align: right;
+                & img {
+                    width: 51px;
+                    height: 32px;
+                    cursor: pointer;
+                }
+                .token {
+                    width: 32px;
+                }
+            }
+            .time {
+                display: none;
+            }
+            .status {
+                font-family: 'Regular';
+                font-size: 12px;
+                text-align: center;
+                padding: 6px 18px;
+                border-radius: 19px;
+                margin-bottom: 10px;
+                
+            }
+            .status1 {
+                color: #006CED;
+                background: rgba(111, 212, 255, 0.2);
+            }
+            .status2 {
+                color: #009A7F;
+                background: rgba(0, 221, 183, 0.2);
+            }
+            .status3 {
+                color: #5400C1;
+                background: rgba(86, 0, 221, 0.2);
+            }
+            .status4 {
+                color: #E02020;
+                background: rgba(255, 46, 46, 0.2);
+            }
+            .status5 {
+                color: #F38F00;
+                background: rgba(255, 137, 0, 0.2);
+            }
+        }
+        .cardFot {
+            display: flex;
+            margin-top: 30px;
+            .desc {
+                width: 50%;
+                p {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5px;
+                }
+                & p:nth-child(1) {
+                    font-family: 'Regular';
+                    font-size: 12px;
+                    color: #000000;
+                }
+                & p:nth-child(2) { 
+                    font-family: 'SemiBold';
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-bottom: 0;
+                }
+                & p:nth-child(3) { 
+                    font-family: 'Regular';
+                    font-weight: 400;
+                    color: rgba(60, 60, 67, 0.6);
+                    font-size: 12px;
+                }
+                & img {
+                    width: 15px;
+                    height: 14px;
+                    cursor: pointer;
+                }
+                .upsize {
+                    font-size: 14px;
+                }
+            }
+        }
+        .tipsBar {
+            font-family: 'Medium';
+            font-size: 12px;
+            color: #F6454F;
+            margin-top: 20px;
+        }
+    }
+    .over {
+        .cardFot {
+            margin-top: 10px;
+        }
+        .tipsBar {
+            margin-top: 10px;
+        }
+    }
+
+    .clear {
+        .cardFot {
+            margin-top: 15px;
+        }
+    }
+
+    .BSC:hover {
+        box-shadow: 0px 10px 30px 0px rgba(255, 174, 0, 0.3);
+        border: 1px solid #E5A800;
+    }
+
+    .HECO:hover {
+        box-shadow: 0px 10px 30px 0px rgba(9, 56, 149, 0.1);
+        border: 1px solid #1B89FF;
+    }
+}
+
+
+@media screen and (max-width: 540px) { 
+    .card { 
+        width: rem(343);
+        min-height: rem(213);
+        background: #FFFFFF;
+        border-radius: rem(24);
+        padding: rem(16);
+        margin-bottom: rem(16);
+        .cardTop {
+            .content {
+                display: flex;
+                justify-content: space-between;
+            }
+            .titleBar {
+                display: flex;
+                align-items: center;
+                .proPic {
+                    width: rem(40);
+                    height: rem(40);
+                    margin-right: rem(10);
+                    background: #EFEFEF;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img {
+                        width: rem(40);
+                        height: rem(40);
+                    }
+                }
+                .title {
+                    width: rem(143);
+                    display: -webkit-box;
+                    word-break: break-all;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: pre-line;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    font-size: rem(20);
+                    font-weight: bold;
+                    color: #000000;
+                    margin-bottom: rem(4);
+                    // display: flex;
+                    align-items: center;
+                    & img {
+                        margin-left: 5px;
+                        width: rem(16);
+                        height: rem(16)
+                    }
+                }
+                .coin {
+                    position: relative;
+                    padding: rem(4) rem(19);
+                    border-radius: rem(19);
+                    line-height: rem(23);
+                    & span {
+                        position: absolute;
+                        top: 50%;
+                        left: rem(12);
+                        transform: translateY(-50%);
+                        width: rem(4);
+                        height: rem(4);
+                        border-radius: 50%;
+                    }
+                    & i {
+                        font-family: 'SemiBold';
+                    }
+                }
+            }
+            .coinPic {
+                text-align: right;
+                & img {
+                    width: rem(32);
+                    height: rem(20);
+                    cursor: pointer;
+                }
+                .token {
+                    width: rem(20);
+                }
+            }
+            .time {
+                display: none;
+            }
+            .status {
+                margin-bottom: rem(5);
+                font-family: 'Regular';
+                font-size: 12px;
+                text-align: center;
+                padding: 6px 16px;
+                border-radius: 19px;
+                
+            }
+            .status1 {
+                color: #006CED;
+                background: rgba(111, 212, 255, 0.2);
+            }
+            .status2 {
+                color: #009A7F;
+                background: rgba(0, 221, 183, 0.2);
+            }
+            .status3 {
+                color: #5400C1;
+                background: rgba(86, 0, 221, 0.2);
+            }
+            .status4 {
+                color: #E02020;
+                background: rgba(255, 46, 46, 0.2);
+            }
+            .status5 {
+                color: #F38F00;
+                background: rgba(255, 137, 0, 0.2);
+            }
+        }
+        .cardFot {
+            display: flex;
+            justify-content: space-between;
+            margin-top: rem(15);
+            .desc {
+                max-width: rem(150);
+                overflow: hidden; 
+                text-overflow: ellipsis;
+                font-family: 'Regular';
+                & p:nth-child(1) {
+                    font-size: rem(12);
+                    color: #000000;
+                    margin-bottom: rem(3);
+                }
+                & p:nth-child(2) { 
+                    white-space: nowrap;
+                    font-weight: 600;
+                    color: #E5A800;
+                    font-size: rem(14);
+                }
+                & p:nth-child(3) { 
+                    font-weight: 400;
+                    color: rgba(60, 60, 67, 0.6);
+                    font-size: rem(12);
+                }
+                & img {
+                    width: rem(14);
+                    height: rem(14);
+                    cursor: pointer;
+                }
+            }
+        }
+        .tipsBar {
+            font-family: 'Medium';
+            font-size: 12px;
+            color: #F6454F;
+        }
+    }
+    // .over {
+    //     height: 240px;
+    // }
+}
+
+.BSC {
+    border: 1px solid #FFE85F;
+    .cardTop {
+        .coin {
+            background: rgba(255, 210, 0, 0.2);
+            color: $bsc_color;
+            & span {
+                background: $bsc_color;
+            }
+        }
+    }
+    .cardFot {
+        .desc p:nth-child(2) { 
+            color: $bsc_color;
+        }
+    }
+}
+
+.HECO {
+    border: 1px solid #01E3F7;
+    .cardTop {
+        .coin {
+            background: rgba(111, 212, 255, 0.2);
+            color: $heco_color;
+            & span {
+                background: $heco_color;
+            }
+        }
+    }
+    .cardFot {
+        .desc p:nth-child(2) { 
+            color: $heco_color;
+        }
+    }
+}

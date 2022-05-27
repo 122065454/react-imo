@@ -1,0 +1,128 @@
+@media screen and (min-width: 540px) {  
+    .cardMid {
+        margin-top: 20px;
+        .desc {
+            display: flex;
+            justify-content: space-between;
+            & span {
+                font-family: 'SemiBold';
+                font-size: 12px;
+                color: #000000;
+                font-weight: 600;
+            }
+            & i {
+                font-style: normal;
+                color: rgba(60, 60, 67, 0.6);
+            }
+        }
+        .enlarge {
+            & span {
+                font-size: 16px;
+            }
+        }
+        .progressBar {
+            overflow: hidden;
+            margin: 7px 0;
+            width: 340px;
+            height: 10px;
+            background: #EFEFEF;
+            border-radius: 7px;
+        }
+        .full {
+            width: 240px;
+            height: 10px;
+            border-radius: 7px;
+        }
+        .transferM {
+            font-size: 12px;
+            font-family: 'SemiBold';
+            text-align: right;
+            font-style: normal;
+            color: rgba(60, 60, 67, 0.6);
+        }
+    }
+}
+
+@media screen and (max-width: 540px) { 
+    .cardMid {
+        margin-top: rem(15);
+        .desc {
+            display: flex;
+            justify-content: space-between;
+            & span {
+                font-family: 'SemiBold';
+                font-size: rem(12);
+                color: #000000;
+                font-weight: 600;
+            }
+            & i {
+                font-style: normal;
+                color: rgba(60, 60, 67, 0.6);
+            }
+        }
+        .progressBar {
+            margin: rem(7) 0;
+            width: 100%;
+            height: rem(10);
+            background: #EFEFEF;
+            border-radius: rem(7);
+            overflow: hidden;
+        }
+        .full {
+            width: rem(224);
+            height: rem(10);
+            border-radius: rem(7);
+        }
+        .transferM {
+            font-size: rem(12);
+            font-family: 'SemiBold';
+            text-align: right;
+            font-style: normal;
+            color: rgba(60, 60, 67, 0.6);
+        }
+    }
+}
+
+
+.BSC {
+    .cardMid {
+        .desc {
+            & span b{
+                color: $bsc_color;
+            }
+        }
+        .full {
+            background: $bsc_color;
+        }
+        .switch {
+            color: $bsc_color;
+            & b { 
+                color: $bsc_color;
+            }
+        }
+        .number {
+            color: $bsc_color;
+        }
+    }
+}
+
+.HECO {
+    .cardMid {
+        .desc {
+            & span b{
+                color: $heco_color;
+            }
+        }
+        .full {
+            background: $heco_color;
+        }
+        .switch {
+            & b {
+                color: $heco_color;
+            }
+        }
+        .number {
+            color: $heco_color;
+        }
+    }
+}

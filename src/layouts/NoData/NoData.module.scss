@@ -1,0 +1,43 @@
+@media screen and (min-width: 540px){
+    .nodata {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        min-height: 300px;
+        & img {
+            width: 90px;
+            height: 90px;
+        }
+        & p {
+            font-family: 'Medium';
+            font-weight: 600;
+            color: rgba(60, 60, 67, 0.6);
+            font-size: 18px;
+            margin-top: 17px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    .nodata {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        min-height: rem(200);
+        & img {
+            width: rem(61);
+            height: rem(68);
+        }
+        & p {
+            color: rgba(60, 60, 67, 0.6);
+            font-size: rem(12);
+            font-family: 'Medium';
+            margin-top: rem(5);
+        }
+    }
+}

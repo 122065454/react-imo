@@ -1,0 +1,84 @@
+@media screen and (min-width: 540px) { 
+    .wrap {
+        min-width: 1200px;
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        .item {
+            position: relative;
+            width: 1200px;
+            margin: 0 auto;
+            .oneBg {
+                position: absolute;
+                top: -120px;
+                left: 182px;
+                width: 1594px;
+                height: 1176px;
+                z-index: -1;
+            }
+            .twoBg {
+                position: absolute;
+                top: 483px;
+                left: -274px;
+                width: 2319px;
+                height: 1359px;
+                z-index: -1;
+            }
+            .threeBg {
+                position: absolute;
+                top: -10px;
+                right: -102px;
+                width: 2361px;
+                height: 1298px;
+                z-index: -1;
+            }
+            .fourBg {
+                position: absolute;
+                top: -615px;
+                left: -274px;
+                width: 2610px;
+                height: 1786px;
+                z-index: -1;
+            }
+        }
+    }
+    .BSC {
+        .oneBg {
+            background-image: url('./img/bsc_bg1.png');
+        }
+        .twoBg {
+            background-image: url('./img/bsc_bg2.png');
+        }
+        .threeBg {
+            background-image: url('./img/bsc_bg3.png');
+        }
+        .fourBg {
+            background-image: url('./img/bsc_bg4.png');
+        }
+        
+    }
+    
+    .HECO {
+        .oneBg {
+            background-image: url('./img/heco_bg1.png');
+        }
+        .twoBg {
+            background-image: url('./img/heco_bg2.png');
+        }
+        .threeBg {
+            background-image: url('./img/heco_bg3.png');
+        }
+        .fourBg {
+            background-image: url('./img/heco_bg4.png');
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .wrap {
+        position: relative;
+        overflow: hidden;
+    }
+}
+

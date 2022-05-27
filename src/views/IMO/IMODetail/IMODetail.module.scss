@@ -1,0 +1,658 @@
+@media screen and (min-width: 540px) { 
+    .wrap {
+        min-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        .bg {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            z-index:-10;
+            zoom: 1;
+        }
+        .main {
+            width: 1200px;
+            margin: 0 auto;
+            .top {
+                margin-top: 30px;
+                margin-bottom: 45px;
+                .breadCrumbs {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Regular';
+                    & span {
+                        font-size: 14px;
+                        color: #585858;
+                    }
+                    .back {
+                        cursor: pointer;
+                        font-weight: 400;
+                        color: #006CED;
+                    }
+                    & i {
+                        margin: 0 8px;
+                        width: 1px;
+                        height: 13px;
+                        background-color: #585858;
+                        display: block
+                    }
+                }
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                .left {
+                    .content {
+                        display: flex;
+                        margin-bottom: 65px;
+                        .circle {
+                            width: 84px;
+                            height: 84px;
+                            background: #ECECEC;
+                            border-radius: 50%;
+                            margin-right: 30px;
+                            overflow: hidden;
+                            & img {
+                                width: 84px;
+                                height: 84px;
+                            }
+                        }
+                        .titleCon {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            & p {
+                                font-weight: bold;
+                                color: #000000;
+                                font-size: 30px;
+                                margin-right: 17px;
+                                font-family: 'Bold';
+                                margin-bottom: 0;
+                            }
+                            .coin {
+                                display: flex;
+                                align-items: center;
+                                padding-right: 20px;
+                                border-radius: 19px;
+                                height: 33px;
+                                line-height: 33px;
+                                & span {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    font-family: 'SemiBold';
+                                }
+                                & i {
+                                    width: 6px;
+                                    height: 6px;
+                                    display: block;
+                                    border-radius: 50%;
+                                    margin-left: 20px;
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                        .link {
+                            display: flex;
+                            align-items: center;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: $heco_color;   
+                            font-family: 'Regular';
+                            & i {
+                                display: block;
+                                margin-left: 5px;
+                                width: 14px;
+                                height: 14px;
+                                background: url(./img/icon.svg);
+                            }   
+                        }
+                    }  
+                    .descBar {
+                        display: flex;
+                        justify-content: space-between;
+                        & > div {
+                            margin-right: 100px;
+                            p {
+                                display: flex;
+                                align-items: center;
+                                font-family: 'Regular';
+                                white-space: nowrap;
+                            }
+                            p:first-child {
+                                font-size: 16px;
+                                color: #000;
+                            }
+                            p:last-child {
+                                font-size: 24px;
+                            }
+                            .time {
+                                padding-left: 5px;
+                                font-size: 14px;
+                            }
+                            img {   
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    position: relative;
+                    min-width: 400px;
+                    .icoWrap {
+                        display: flex;
+                        margin-bottom: 70px;
+                        justify-content: flex-end;
+                        .ico {
+                            margin-left: 31px;
+                            width: 80px;
+                            height: 80px;
+                            text-align: center;
+                            background: #ebf9f6;
+                            border-radius: 24px;
+                            line-height: 80px;
+                            & img {
+                                width: 65px;
+                                height: 65px;
+                            }
+                        }
+                    }
+                    .pos {
+                        position: absolute;
+                        right: 0;
+                    }
+                    .activeStatus {
+                        text-align: center;
+                        width: 281px;
+                        height: 70px;
+                        line-height: 70px;
+                        border-radius: 24px;
+                        border: 1px solid #1B89FF;
+                        & span {
+                            margin-right: 10px;
+                        }
+                    }
+                    .wallRight {
+                        .activeStatus {
+                            border: 0;
+                            margin-top: -5px;
+                        }
+                    }
+                    .operate {
+                        width: 281px;
+                        height: 60px;
+                        border-radius: 35px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        text-align: center;
+                        line-height: 60px;
+                    }
+                    .control {
+                        & a {
+                            font-weight: 600;
+                            font-size: 16px;
+                            margin-right: 32px;
+                            text-decoration: underline;
+                        }
+                        & button {
+                            height: 50px;
+                            border-radius: 35px;
+                            font-size: 14px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            text-align: center;
+                            cursor: pointer;
+                            border: 0;
+                            margin-right: 10px;
+                        }
+                        & button:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    .claimBtn {
+                        display: flex;
+                        & button {
+                            width: 110px;
+                            height: 70px;
+                            border-radius: 35px;
+                            font-size: 16px;
+                            line-height: 28px;
+                            font-weight: 600;
+                            text-align: center;
+                            cursor: pointer;
+                            border: 0;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .btnWrap {
+                position: relative;
+                .inli {
+                    font-family: 'Medium';
+                    position: absolute;
+                    top: 90px;
+                    font-size: 14px;
+                    color: #000;
+                }
+            }
+            .middle {   
+                margin-top: 100px;
+                .tabSign {
+                    font-family: 'SemiBold';
+                    & span {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: rgba(60, 60, 67, 0.6);
+                        padding-right: 45px;
+                        cursor: pointer;
+                    }
+                    .active {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .line {
+            height: 1px;
+            border: 1px solid rgba(60, 60, 67, 0.3);
+            margin-top: 66px;
+        }
+    }
+    .BSC {
+        .bg {
+            background: url('./img/bsc.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 0px;
+        }
+
+    }
+    .HECO{
+        .bg {
+            background: url('./img/heco.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) { 
+    .wrap { 
+        position: relative;
+        overflow: hidden;
+        .main {
+            padding: 0 rem(16);
+            margin: 0 auto;
+            .top {
+                margin-top: rem(12);
+                margin-bottom: rem(16);
+                font-family: 'Medium';
+                .breadCrumbs {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Regular';
+                    & span {
+                        font-size: 14px;
+                        color: #585858;
+                    }
+                    .back {
+                        cursor: pointer;
+                        font-weight: 400;
+                        color: #006CED;
+                    }
+                    & i {
+                        margin: 0 8px;
+                        width: 1px;
+                        height: 13px;
+                        background-color: #585858;
+                        display: block
+                    }
+                }
+                .backBar {
+                    display: flex;
+                    align-items: center;
+                    & img {
+                        width: rem(26);
+                        height: rem(26);
+                        margin-right: rem(20);
+                    }
+                    & span {
+                        font-size: rem(20);
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
+            }
+            .header {
+                position: relative;
+                .left {
+                    .content {
+                        display: flex;
+                        margin-bottom: rem(25);
+                        .circle {
+                            width: rem(50);
+                            height: rem(50);
+                            background: #ECECEC;
+                            border-radius: 50%;
+                            margin-right: rem(10);
+                            overflow: hidden;
+                            & img {
+                                width: rem(50);
+                                height: rem(50);
+                            }
+                        }
+                        .titleCon {
+                            display: flex;
+                            align-items: center;
+                            & p {
+                                width: rem(100);
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                font-weight: bold;
+                                color: #000000;
+                                font-size: rem(20);
+                                margin-right: rem(4);
+                                font-family: 'Bold';
+                                margin-bottom: 0;
+                            }
+                            .coin {
+                                display: flex;
+                                align-items: center;
+                                padding-right: rem(10);
+                                border-radius: rem(12);
+                                height: rem(24);
+                                & span {
+                                    font-size: rem(12);
+                                    font-weight: 600;
+                                    font-family: 'SemiBold';
+                                }
+                                & i {
+                                    width: rem(4);
+                                    height: rem(4);
+                                    display: block;
+                                    border-radius: 50%;
+                                    margin-left: rem(10);
+                                    margin-right: rem(5);
+                                }
+                            }
+                        }
+                        .link {
+                            display: flex;
+                            align-items: center;
+                            font-size: rem(12);
+                            font-weight: 400;
+                            color: $heco_color;
+                            position: relative;
+                            font-family: 'Regular';
+                            & i {
+                                display: block;
+                                margin-left: rem(5);
+                                width: rem(14);
+                                height: rem(14);
+                                background: url(./img/icon.svg);
+                            }
+                        }
+                    }
+                    .descBar {
+                        display: flex;       
+                        justify-content: space-between;
+                        & > div {
+                            p {
+                                display: flex;
+                                font-family: 'Regular';
+                                font-size: rem(12);
+                            }
+                            p:first-child {
+                                color: #000;
+                                margin-bottom: 0;
+                                height: rem(40);
+                            }
+                            img {   
+                                width: 12px;
+                                height: 12px;
+                                position: relative;
+                                top: 2px;
+                                left: -3px;
+                            }
+                        }
+                    }  
+                     
+                }
+                .right {
+                    position: absolute;
+                    right: rem(-15);
+                    top: rem(-10);
+                    .icoWrap {
+                        display: flex;
+                        margin-bottom: rem(20);
+                        flex-wrap: wrap;
+                        width: rem(100);
+                        .ico {
+                            margin-left: rem(13);
+                            margin-bottom: rem(10);
+                            width: rem(30);
+                            height: rem(30);    
+                            text-align: center;
+                            background: #ebf9f6;
+                            border-radius: rem(13);
+                            line-height: rem(36);
+                            & img {
+                                width: rem(30);
+                                height: rem(30);
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .btnWrap {
+                width: 100%;
+                position: relative;
+                margin-top: rem(15);
+                display: flex;
+                justify-content: center;
+                .inli {
+                    position: absolute;
+                    top: rem(70);
+                    font-size: rem(12);
+                    line-height: rem(25);
+                    color: #000;
+                    font-family: 'Medium';
+                    padding: 0 rem(10);
+                }
+                .wallRight {
+                    .activeStatus {
+                        border: 0;
+                        margin-top: rem(-5);
+                    }
+                }
+                .activeStatus {
+                    text-align: center;
+                    padding: 0 rem(18);
+                    min-width: rem(240);
+                    height: rem(50);
+                    line-height: rem(50);
+                    border-radius: rem(30);
+                    border: 1px solid #1B89FF;
+                    & span {
+                        margin-right: rem(10);
+                    }
+                }
+                .operate {
+                    width: rem(266);
+                    height: rem(50);
+                    border-radius: rem(30);
+                    font-size: rem(14);
+                    font-weight: 600;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: rem(50);
+                }
+                .control {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    & a {
+                        width: 47%;
+                        margin-bottom: rem(15);
+                        text-align: center;
+                        height: rem(50);
+                        line-height: rem(50);
+                        padding: 0 rem(17);
+                        background: #FFFFFF;
+                        border-radius: rem(35);
+                        font-weight: 600;
+                        font-size: rem(14);
+                    }
+                    & button {
+                        width: 47%;
+                        height: rem(50);
+                        border-radius: rem(35);
+                        font-size: rem(14);
+                        line-height: 28px;
+                        font-weight: 600;
+                        text-align: center;
+                        cursor: pointer;
+                        border: 0;
+                    }
+                }
+                .claimBtn {
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 80px;
+                    .center {
+                        margin: 0 auto;
+                    }
+                    & button {
+                        width: rem(95);
+                        height: rem(50);
+                        border-radius: 35px;
+                        font-size: rem(12);
+                        line-height: 28px;
+                        font-weight: 600;
+                        text-align: center;
+                        cursor: pointer;
+                        border: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .middle {   
+                margin-top: rem(20);
+                .tabSign {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: 'SemiBold';
+                    & span {
+                        font-size: rem(14);
+                        font-weight: 600;
+                        color: rgba(60, 60, 67, 0.6);
+                        padding-right: rem(15);
+                        cursor: pointer;
+                    }
+                    .active {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .en {
+        .claimBtn {
+            margin-bottom: rem(120) !important;
+            .inli {
+                text-align:justify;
+            }
+        }
+        .descBar { 
+            & > div:first-child {
+                width: 33.33%;
+            }
+            img {
+                top: 3px !important;
+                left: -7px !important;
+            }
+        }
+    }
+}
+
+.BSC {
+    .coin {
+        background: #FFF4BF;
+        & span {
+            color: $bsc_color;
+        }
+        & i {
+            background: $bsc_color;
+        }
+    }
+    .operate {
+        color: #FFC900;
+        background: #080808;
+        box-shadow: 0px 10px 20px 0px rgba(45, 45, 45, 0.2);
+    }
+    .control, .claimBtn {
+        & a {
+            color: #080808;
+        }
+        & button {
+            color: #FFC900;;
+            background: #080808;
+            box-shadow: 0px 10px 20px 0px rgba(45, 45, 45, 0.2);
+        }
+    }
+    .descBar {
+        div {
+            p:last-child {  
+                color: $bsc_color;
+            }
+        }
+    }
+}
+
+.HECO{
+    .coin {
+        background: rgba(111, 212, 255, 0.2);
+        & span {
+            color: $heco_color;
+        }
+        & i {
+            background: $heco_color;
+        }
+    }
+    .operate {
+        background: #009A7F;
+        box-shadow: 0px 10px 20px 0px rgba(0, 181, 107, 0.2);
+        color: #FFFFFF;
+    }
+    .control, .claimBtn {
+        & a {
+            color: #009A7F;
+        }
+        & button {
+            color: #FFFFFF;
+            background: #009A7F;
+            box-shadow: 0px 10px 20px 0px rgba(0, 181, 107, 0.2);
+            cursor: pointer;
+            border: 0;
+        }
+    }
+    .descBar {
+        div {
+            p:last-child {
+                color: $heco_color;
+            }
+        }
+    }
+}
+
+
+
+

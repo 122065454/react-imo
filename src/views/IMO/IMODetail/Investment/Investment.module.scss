@@ -1,0 +1,192 @@
+@media screen and (min-width: 540px){
+    .main {
+        margin-top: 50px;
+        width: 1200px;
+        background: rgba(246, 246, 246, 0.5);
+        border-radius: 24px;
+        border: 1px solid #FFFFFF;
+        padding: 20px 50px 30px 30px;
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 20px;
+            font-family: 'SemiBold';
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'Regular';
+            .content_li {
+                position: relative;
+                display: flex;
+                width: 530px;
+                justify-content: space-between;
+                height: 48px;
+                font-size: 14px;
+                line-height: 48px;
+                font-weight: 400;
+                color: #000000;
+                & p {
+                    font-size: 14px;
+                    color: #000000;
+                    padding-right: 10px;
+                    text-overflow :ellipsis; 
+                    white-space :nowrap;
+                    overflow : hidden;
+                    text-align: left;
+                }
+                & i {
+                    right: 0;
+                    top:15px;
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: url(../img/icon.svg);
+                }
+                .one {
+                    width: 50px;
+                }
+                .two {
+                    width: 140px;
+                }
+                .three {
+                   width: 205px;
+                }
+                .four {
+                    width: 115px;
+                }
+            }
+        }
+        .content_bottom{
+            font-family: 'Regular';
+            margin-top: 50px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    font-size: 14px;
+                    font-family: Montserrat-Regular, Montserrat;
+                    font-weight: 400;
+                    color: rgba(60, 60, 67, 0.6);
+                    display: flex;
+                    flex-direction: column;
+                        & span{
+                            display: flex;
+                            align-items: center;
+                            margin-top: 5px;
+                        }
+                        & img {
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 5px;
+                        }
+                }
+                .lp{
+                    font-size: 20px;
+                    font-family: Montserrat-Regular, Montserrat;
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px){
+    .main {
+        margin-bottom: rem(100);
+        margin-top: rem(20);
+        background: #FFFFFF;
+        border-radius: rem(24);
+        padding: rem(17) rem(16);
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #000000;
+            font-family: 'SemiBold';
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'Regular';
+            .content_li {
+                position: relative;
+                display: flex;
+                width: rem(345);
+                justify-content: space-between;
+                height: rem(55);
+                font-size: rem(12);
+                line-height: rem(55);
+                font-weight: 400;
+                color: #000000;
+                & p {
+                    font-size: 14px;
+                    color: #000000;
+                    padding-right: 10px;
+                    text-overflow :ellipsis; 
+                    white-space :nowrap;
+                    overflow : hidden;
+                    text-align: left;
+                }
+                & i {
+                    right: 0;
+                    top: rem(20);
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: url(../img/icon.svg);
+                }
+                .one {
+                    width: rem(30);
+                }
+                .two {
+                    width: rem(165)
+                }
+                .four {
+                    width: rem(115);
+                }
+            }
+        }
+        .content_bottom{
+            font-family: 'Regular';
+            ul{
+                margin-top: rem(5);
+                li{
+                    font-size: rem(12);
+                    align-items: baseline;
+                    font-weight: 400;
+                    color: rgba(60, 60, 67, 0.6);
+                    display: flex;
+                    justify-content: space-between;
+                    height: rem(45);
+                        span{
+                            display: flex;
+                            align-items: center;
+                            margin-top: rem(5);
+                        }
+                        & img {
+                            width: rem(15);
+                            height: rem(15);
+                            margin-left: rem(5);
+                        }
+                    .price {
+                        font-size: rem(12);
+                        & p {
+                            text-align: right;
+                        }
+                    }
+                }
+                .lp{
+                    font-size: rem(12);
+                    font-family: Montserrat-Regular, Montserrat;
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

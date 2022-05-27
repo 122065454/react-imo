@@ -1,0 +1,116 @@
+@media screen and (min-width: 540px) {  
+    .main {
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 172px;
+        .tabBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .tab {
+                & span {
+                    font-family: 'SemiBold';
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: rgba(60, 60, 67, 0.6);
+                    padding-right: 45px;
+                    cursor: pointer;
+                }   
+                & span:hover, & span.select {
+                    color: #000;
+                }
+            }
+        }
+        .tips {
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: rgba(60, 60, 67, 0.8);
+            margin: 30px 0;
+            font-size: 18px;
+            font-family: 'Regular';
+        }
+        .cardBar {  
+            width: 1200px;
+            height: 294px;
+            .noData {
+                min-width: 1200px;
+                text-align: center;
+            }
+        }
+        .between {
+            display: flex;
+            justify-content: space-between;
+        }
+        .df {
+            display: flex;
+        }
+        .item {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) { 
+    .main { 
+        margin: rem(30) 0 rem(8) rem(16);
+        .tabBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: rem(20);
+            .tab {
+                & span {
+                    font-size: rem(20);
+                    font-weight: 600;
+                    color: rgba(60, 60, 67, 0.6);
+                    padding-right: rem(15);
+                    cursor: pointer;
+                    font-family: 'SemiBold';
+                }   
+                & span:hover, & span.select {
+                    color: #000;
+                }
+            }
+        }
+        .tips {
+            font-family: 'Medium';
+            width: rem(343);
+            padding: rem(10);
+            border-radius: rem(10);
+            font-size: rem(13);
+            color: rgba(60, 60, 67, 0.8);
+            margin-bottom: rem(20);
+        }
+        .cardBar {
+            display: flex;
+            align-items: center;
+            min-height: rem(258);
+            width: rem(343);
+            .noData {
+                width: rem(343);
+                text-align: center;
+            }
+        }
+        .between {
+            display: flex;
+            justify-content: space-between;
+        }
+        .df {
+            display: flex;
+        }
+    }
+}
+
+.HECO {
+    .tips {
+        background: #D6FFFA;
+    }
+}
+
+.BSC {
+    .tips {
+        background: #FFEEE0;
+    }
+}
+

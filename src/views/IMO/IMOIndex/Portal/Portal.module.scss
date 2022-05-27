@@ -1,0 +1,108 @@
+.pcPicBar {
+    height: 234px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 156px;
+    & p {
+        font-family: 'Bold';
+        text-align: center;
+        padding: 48px 0;
+        font-size: 36px;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin-bottom: 0;
+    }
+    & a {
+        font-family: 'Bold';
+        margin: 0 auto;
+        line-height: 48px;
+        display: block;
+        border: 0;
+        width: 192px;
+        height: 48px;
+        border-radius: 24px;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+.portalWrap {
+    width: rem(343);
+    margin: 0 auto;
+    .poratal {
+        position: relative;
+        height: rem(70);
+        line-height: rem(70);
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: rem(24);
+        font-family: 'SemiBold';
+        font-size: rem(13);
+        .proces {
+            width: rem(30);
+            height: rem(30);
+            margin-right: rem(5);
+        }
+        .jump {
+            width: rem(24);
+            height: rem(24);
+            margin-left: rem(16);
+        }
+    }
+    .h5PicBar {
+        background-size: contain;
+        margin-top: rem(24);
+        margin-bottom: rem(107);
+        height: rem(120);
+        background-repeat: no-repeat;
+        text-align: center;
+        font-family: 'Bold';
+        & p {
+            text-align: center;
+            padding: rem(14) rem(60) rem(6);
+            font-size: rem(18);
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 0;
+        }
+        & a {
+            display: block;
+            margin: 0 auto;
+            line-height: rem(30);
+            border: 0;
+            width: rem(128);
+            height: rem(30);
+            border-radius: rem(24);
+            font-weight: bold;
+            font-size: rem(14);
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}
+
+.BSC {
+    .pcPicBar {
+        background-image: url('./img/bsc_fot_ban.png');
+    }
+    .h5PicBar {
+        background-image: url('./img/h5_bsc_fot_ban.png');
+    }
+    & a {
+        background: #D59C00;
+    }
+}
+
+.HECO {
+    .pcPicBar {
+        background-image: url('./img/heco_fot_ban.png');
+    }
+    .h5PicBar {
+        background-image: url('./img/h5_heco_fot_ban.png');
+    }
+    & a {
+        background: #009A7F;
+    }
+}

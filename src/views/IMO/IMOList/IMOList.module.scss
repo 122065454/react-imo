@@ -1,0 +1,199 @@
+@media screen and (min-width: 540px) {  
+    .wrap {
+        min-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        .bg {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            z-index:-10;
+            zoom: 1;
+        }
+        .main {
+            width: 1200px;
+            margin: 0 auto 65px;
+            .top {
+                margin-top: 30px;
+                margin-bottom: 45px;
+                .breadCrumbs {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Regular';
+                    & span {
+                        font-size: 14px;
+                        color: #585858;
+                    }
+                    .back {
+                        cursor: pointer;
+                        font-weight: 400;
+                        color: #006CED;
+                    }
+                    & i {
+                        margin: 0 8px;
+                        width: 1px;
+                        height: 13px;
+                        background-color: #585858;
+                        display: block
+                    }
+                }
+            }
+            .activing {
+                .tabBar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 50px;
+                    .tab {
+                        & span {
+                            font-family: 'SemiBold';
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: rgba(60, 60, 67, 0.6);
+                            padding-right: 45px;
+                            cursor: pointer;
+                        }   
+                        & span:hover, & span.select {
+                            color: #000;
+                        }
+                    }
+                }
+                .cardBar {  
+                    width: 1200px;
+                    min-height: 294px;
+                    .noData {
+                        min-width: 1200px;
+                        text-align: center;
+                    }
+                }
+                .between {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .df {
+                    display: flex;
+                }
+                .item {
+                    display: none;
+                }
+                .range {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .mb30 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .BSC {
+        .bg {
+            background: url('./img/bsc.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 0px;
+        }
+
+    }
+    .HECO{
+        .bg {
+            background: url('./img/heco.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 0px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) { 
+    .wrap { 
+        position: relative;
+        overflow: hidden;
+        .main {
+            .top {
+                margin-top: rem(12);
+                margin-bottom: rem(16);
+                .breadCrumbs {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Regular';
+                    & span {
+                        font-size: 14px;
+                        color: #585858;
+                    }
+                    .back {
+                        cursor: pointer;
+                        font-weight: 400;
+                        color: #006CED;
+                    }
+                    & i {
+                        margin: 0 8px;
+                        width: 1px;
+                        height: 13px;
+                        background-color: #585858;
+                        display: block
+                    }
+                }
+                .backBar {
+                    display: flex;
+                    align-items: center;
+                    margin-left: rem(16);
+                    & img {
+                        width: rem(26);
+                        height: rem(26);
+                        margin-right: rem(20);
+                    }
+                    & span {
+                        font-size: rem(20);
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
+            }
+            .activing { 
+                margin: rem(16) 0 rem(85) rem(16);
+                .tabBar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: rem(20);
+                    .tab {
+                        & span {
+                            font-family: 'SemiBold';
+                            font-size: rem(14);
+                            font-weight: 600;
+                            color: rgba(60, 60, 67, 0.6);
+                            padding-right: rem(15);
+                            cursor: pointer;
+                        }   
+                        & span:hover, & span.select {
+                            color: #000;
+                        }
+                    }
+                }
+                .cardBar {
+                    display: flex;
+                    align-items: center;
+                    min-height: rem(258);
+                    width: rem(343);
+                    .noData {
+                        width: rem(343);
+                        text-align: center;
+                    }
+                }
+                .between {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .df {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+

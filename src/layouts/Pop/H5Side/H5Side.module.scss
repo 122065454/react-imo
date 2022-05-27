@@ -1,0 +1,56 @@
+@media screen and (max-width: 540px) {  
+    .popWrap {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.4);
+        z-index: 9999;
+        display: flex;
+        .pop {
+            position: fixed;
+            transition-duration: 0.3s;
+            top: 0;
+            left: rem(-311);
+            width: rem(311);
+            background-color: #fff;
+            z-index: 9999;
+            padding: rem(60) rem(0) rem(0) rem(56);
+            bottom: 0;
+            .item {
+                display: flex;
+                align-items: center;
+                margin-bottom: rem(42);
+                font-family: 'Medium';
+                & img {
+                    width: rem(20);
+                    height: rem(20);
+                    margin-right: rem(10);
+                }
+                & a {
+                    font-weight: 500;
+                    color: #000000;
+                    font-size: rem(14);
+                }
+            }
+        }
+        .popShow {
+            transform: translateX(rem(300));
+            z-index  : 10000;
+        }
+
+        .popHideShow {
+            transform: translateX(rem(0));
+            z-index  : 10000;
+        }
+        .blank {
+            width: rem(64);
+            position: fixed;
+            top: 0; 
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+        }
+    }
+}
